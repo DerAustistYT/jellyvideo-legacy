@@ -1,0 +1,38 @@
+plugins { id 'com.android.application' }
+
+layout.buildDirectory = file('build-fresh')
+
+android {
+    namespace 'org.jellyvideo.legacy'
+    compileSdk 35
+    buildToolsVersion '35.0.0'
+
+    defaultConfig {
+        applicationId 'org.jellyvideo.legacy'
+        minSdk 15
+        targetSdk 28
+        versionCode 3
+        versionName '0.3.0'
+    }
+
+
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation 'org.conscrypt:conscrypt-android:2.5.2'
+    implementation 'org.bouncycastle:bcprov-jdk15to18:1.86'
+    implementation 'org.bouncycastle:bctls-jdk15to18:1.86'
+    implementation 'org.bouncycastle:bcutil-jdk15to18:1.86'
+}
