@@ -55,3 +55,7 @@ Movie library on the LG E610:
 
 Player with controls (the LG captures landscape playback in a rotated framebuffer):
 ![Video player](docs/screenshots/player-lg-e610.png)
+
+## Other editions
+
+See [the four-app catalog](https://github.com/DerAustistYT/jellyfin-legacy-clients) for music/video clients and JellyStone editions for Android 1.5+.
